@@ -1,24 +1,28 @@
 {
-  "lang": "es",
-  "name": "Alex Gibson",
-  "short_name": "alxgbsn",
+  "lang": "en",
+  "name": "David H",
+  "short_name": "david",
   "icons": [
     {
-      "src": "",
+      "src": "assets/images/avatar-180.jpg",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "",
+      "src": "assets/images/avatar-196.jpg",
       "sizes": "196x196",
       "type": "image/png"
     },
     {
-      "src": "",
+      "src": "assets/images/avatar-300.jpg",
       "sizes": "300x300",
       "type": "image/png"
     }
   ],
-  "start_url": "/",
-  "display": "browser"
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+
 }

@@ -1,17 +1,30 @@
 ---
 ---
 {
-  "name": "prueba",
-  "short_name": "prueba",
-  "lang": "es-ES",
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "lang": "en",
+  "name": "David H",
+  "short_name": "david",
   "icons": [
     {
-      "src": "https://static.wixstatic.com/media/95b25e_68bc74c1921049e99f4cbb1be296599a~mv2_d_2767_1851_s_2.png/v1/fill/w_153,h_102,al_c,q_80,usm_0.66_1.00_0.01/95b25e_229e42795cfc4fee9105f7261f46dffd.png",
-      "sizes": "153*102",
+      "src": "assets/images/avatar-180.jpg",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/avatar-196.jpg",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/avatar-300.jpg",
+      "sizes": "300x300",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+
 }

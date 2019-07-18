@@ -2,7 +2,11 @@
 layout: null
 ---
 // Cache name: adjust version number to invalidate service worker cachce.
-var urlsToCache = [];
+var urlsToCache = [
+  '/',
+  '/index.html',
+  '/assets/css/main.css'
+];
 var CACHE_NAME = 'james-ives-cache-v2';
 
 self.addEventListener('install', function(event) {
