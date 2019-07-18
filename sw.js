@@ -14,9 +14,5 @@ self.addEventListener('install', function(event) {
         return cache.addAll(urlsToCache);
       })
   );
-<<<<<<< HEAD
-});
-=======
 });
 
->>>>>>> 901c50ba57795a2417fe2aac93b312864d5b39b7
