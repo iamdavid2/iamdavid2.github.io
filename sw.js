@@ -20,6 +20,17 @@ self.addEventListener('install', function(event) {
   );
 });
 
-this.addEventListener('fetch', function (event) {
-  // it can be empty if you just want to get rid of that error
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
+
+self.addEventListener('fetch', event => {
+  console.log(event.request.url);
+  event.respondWith(
+    caches.open(cacheName)
+      .then(cache => cache.match(event.request, {ignoreSearch: true}))
+      .then(response => {
+      return response || fetch(event.request);
+    })
+  );
 });
