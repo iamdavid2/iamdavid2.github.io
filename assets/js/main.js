@@ -18,6 +18,27 @@ function registerServiceWorker() {
     });
 }
 
+
+function registerServiceWorker() {
+
+    if (!navigator.serviceWorker) {
+        return;
+    }
+
+    navigator.serviceWorker.register('/sw.js').then(() => {
+        console.log('Service Worker: registered'); // eslint-disable-line no-console
+    }).catch(err => {
+        console.log('Service Worker: registration failed ', err); // eslint-disable-line no-console
+    });
+
+
+    navigator.serviceWorker.register('/firebase-messaging-sw.js').then(() => {
+      console.log('Service Worker: registered'); // eslint-disable-line no-console
+    }).catch(err => {
+        console.log('Service Worker: registration failed ', err); // eslint-disable-line no-console
+    });
+}
+
 registerServiceWorker();
 
 var firebaseConfig = {
@@ -38,6 +59,7 @@ var firebaseConfig = {
 
   messaging.requestPermission()
     .then( function(){
+      debugger;
       console.log("Have Permision")
       return messaging.getToken();
   })
