@@ -8,19 +8,15 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TGVR6Q4');</script>
-	  
-	  
 <!-- End Google Tag Manager -->
 	  
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CLEAN MARKUP = GOOD KARMA.
       Hi source code lover,
-
       you're a curious person and a fast learner ;)
       Let's make something beautiful together. Contribute on Github:
       https://github.com/webslides/webslides
-
       Thanks,
       @jlantunez.
     -->
@@ -74,12 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
-<style>
 
-	video.bkg {
-    background: black
-}
-	  
   </head>
   <body>
 	  <!-- Google Tag Manager (noscript) -->
@@ -127,7 +118,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 <section class="fullscreen">
   <div class="embed">
-    <video autoplay loop poster="image.jpg" id="video1">
+    <!-- <video autoplay loop poster="image.jpg" id="video1> -->
+	 <video controls autoplay> -->
       <source src="VID_20220421_163507163_2.mp4" type="video/mp4">
     </video>
   </div>
@@ -441,7 +433,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- end main -->
 
    <!-- A global footer
-
      <footer role="contentinfo">
       <div class="wrap">
         <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
@@ -450,19 +441,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	      
+
     <script>
       window.ws = new WebSlides();
-	    
-	    	  $('#video1').on('loadstart', function (event) {
-    $(this).addClass('bkg');
-    $(this).attr("poster", "http://iphonewrd.com/img/loading.gif");
-});
-$('#video1').on('canplay', function (event) {
-    $(this).removeClass('bkg');
-    $(this).removeAttr("poster");
-});
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
