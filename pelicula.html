@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Trying Lax JS</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet"> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section id="hello" class="w-screen overflow-x-hidden h-screen bg-yellow-200 relative z-0">
+  <div class="p-6 flex flex-col justify-center items-center w-full h-screen fixed z-0">
+    <div class="lax lax_preset_spin text-center">
+      <h1 class="font-bold text-xl lg:text-7xl mb-12">Viernes de película <a href="https://alexfox.dev/lax.js" target="_blank" class="bg-gray-900 text-white hover:bg-white hover:text-gray-900 transition-colors">Lax JS</a></h1>
+      <p class="text-lg lg:text-2xl down-chevron">...improvising and using <b>Oasis</b> lyrics as placeholder text</p>
+    </div>
+  </div>
+</section>
+
+<section id="oasis1" class="bg-yellow-200 relative z-10 h-screen w-screen overflow-x-hidden">
+  <div>
+    <blockquote class="text-lg lg:text-2xl font-light flex flex-col justify-center items-center h-screen relative">
+      <span class="text">
+      Some day you will find me<br>
+      Caught beneath the landslide<br>
+      In a <a href="https://youtu.be/tI-5uv4wryI" target="_blank" class="font-bold text-red-500 hover:underline">champagne supernova</a> in the sky<br>
+      </span>
+    </blockquote>
+  </div>
+</section>
+
+<section class="bg-yellow-200 relative">
+  <span class="bar-bottom w-screen block bottom-0 py-1 overflow-x-hidden">
+    <span class="h-3 bg-white w-full block"></span>
+  </span>
+</section>
+
+<section id="oasis2" class="bg-yellow-200 z-10 pb-16 text-lg lg:text-3xl text-gray-800 font-light overflow-x-hidden w-screen relative py-24">
+  <div class="mx-auto px-4 container flex flex-col md:flex-row h-screen items-center justify-evenly">
+    <blockquote>
+      <span class="block">You gotta <a href="https://youtu.be/DrARl0dzd-0" target="_blank" class="font-bold text-red-500 hover:underline">roll with it</a>,</span>
+      <span class="block">You gotta take your time,</span>
+      <span class="block">You gotta say what you say,</span>
+      <span class="block">Don't let anybody get in your way.</span>
+    </blockquote>
+    <div class="pt-12 h-full flex items-center">
+      <img src="https://cocomaterial.com/media/radio_object_house-1.svg" alt="Coco Material Illustration" class="max-h-full h-72 lax lax_preset_jiggle:120:10">
+      <img src="https://cocomaterial.com/media/school_education_musical_note_black_partiture.svg" alt="Coco Material Illustration" class="h-12 ml-4 mt-6 note  lax lax_preset_jiggle:30:15">
+      <img src="https://cocomaterial.com/media/school_education_musical_note_quaver_partiture.svg" alt="Coco Material Illustration" class="h-12 note ml-4 mt-3 lax lax_preset_jiggle:50:12">
+      <img src="https://cocomaterial.com/media/school_education_musical_note_semiquaver_partiture.svg" alt="Coco Material Illustration" class="h-12 note ml-4 lax lax_preset_jiggle:60:10">
+    </div>
+  </div>
+</section>
+
+<section class="bg-yellow-200 relative">
+  <span class="bar-top w-screen block top-0 overflow-x-hidden">
+    <span class="h-3 bg-white w-full block"></span>
+  </span>
+</section>
+
+<section class="h-screen relative bg-gray-800 flex justify-center items-center overflow-x-hidden w-screen">
+  <div>
+    <img id="architecture" src="https://placeimg.com/500/500/arch" alt="" class="shadow-xl">
+  </div>
+  <div id="overlayer" class="absolute h-screen bg-gray-800 flex justify-center items-center overflow-x-hidden">
+    <blockquote id="overlayer-text" class="whitespace-nowrap text-white text-lg lg:text-3xl"><a href="https://youtu.be/4fLR3FRaFsQ" class="text-yellow-200 font-bold hover:underline" target="_blank">Some might say</a><br> they don’t believe in heaven,<br> go and tell that to the man who lives in hell</blockquote>
+  </div>
+</section>
+
+<section class="h-screen bg-green-200">
+  
+</section>
+
+<footer class="bg-gray-900 py-5 relative w-screen">
+  <div class="container mx-auto px-4 text-center text-white">
+    And that's it.
+  </div>
+</footer>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/lax.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
